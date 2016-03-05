@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'restaurants#index'
-  resources :restaurants
+  resources :restaurants, only: [:index, :show] do
+    resources :posts, only: [:index, :create]
+  end
   resources :tags, param: :description
 
   # Example of regular route:

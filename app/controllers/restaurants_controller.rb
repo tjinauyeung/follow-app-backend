@@ -10,9 +10,11 @@ class RestaurantsController < ApplicationController
   def show
     restaurant = Restaurant.find(params[:id])
     tags = restaurant.tags
+    posts = restaurant.posts
     render json:{
       restaurant: restaurant,
-      tags: tags
+      tags: tags,
+      posts: posts
     }
   end
 end

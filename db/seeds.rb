@@ -73,7 +73,6 @@ rakang = Restaurant.create({name: "Rakang", street: "Elandsgracht 29-31", city: 
 
 #Tag application
 yokiyo.tags << korean
-restaurant_korea.tags << korean
 miss_korea.tags << korean
 loetje.tags << steak
 red.tags << steak
@@ -89,3 +88,18 @@ little_collins.tags << breakfast << brunch
 bird_thai.tags << thai
 kinnaree.tags << thai
 rakang.tags << thai
+
+user = User.create(name: "Tjin", country: "Hong Kong")
+matt = User.create(name: "Matt", country: "Canada")
+jimmy = User.create(name: "Jimmy", country: "Canada")
+
+
+first_post = Post.create(description: "I want to go here tonight!", user: user)
+second_post = Post.create(description: "me too!", user: matt)
+third_post = Post.create(description: "something", user: jimmy)
+fourth_post = Post.create(description: "something", user: jimmy)
+fith_post = Post.create(description: "this is my second post", user: jimmy)
+
+rakang.posts << first_post << third_post
+gs.posts << second_post
+ellis.posts << fourth_post << fith_post
