@@ -8,11 +8,58 @@
 Tag.destroy_all
 Restaurant.destroy_all
 
-happy = Tag.create({option: "happy"})
-happy_meal = Tag.create({option: "Happy Meal"})
-burger = Tag.create({option: "burger"})
+#Tags
+korean = Tag.create({description: "korean"})
+steak = Tag.create({description: "steak"})
+surinaams = Tag.create({description: "surinaams"})
+burger = Tag.create({description: "burger"})
 
-mcdonalds = Restaurant.create({name: "McDonalds"})
-kfc = Restaurant.create({name: "KFC"})
+#Korean
+yokiyo = Restaurant.create({name: "Yokiyo", street: "Oudezijds Voorburgwal 67", city: "Amsterdam", phone: "020 331 45 62",
+  website: "http://yokiyo.nl/", photo: "http://ginger-blue.nl/wp-content/uploads/2014/11/Yokiyo-gevel.jpg", logo: "http://www.koreatown.in/wp-content/uploads/2014/06/705_yokiyo-korean-social-food-amsterdam.jpg"})
 
-mcdonalds.tags << happy << happy_meal << burger
+restaurant_korea = Restaurant.create({name: "Restaurant Korea", street: "Van Boshuizenstraat 207", city: "Amsterdam", phone: "020 644 52 73",
+  website: "http://www.restaurant-korea.nl/", photo: "http://media-cdn.tripadvisor.com/media/photo-s/02/31/ea/2e/filename-nl-amsterdam.jpg", logo: "http://www.restaurant-korea.nl/img/logo.png"})
+
+miss_korea = Restaurant.create({name: "Miss Korea BBQ", street: "Albert Cuypstraat 66-70", city: "Amsterdam", phone: "020 679 06 06",
+  website: "http://www.misskorea.nl/", photo: "http://www.misskorea.nl/images/mk0011.jpg", logo: ""})
+
+#Steak
+loetje = Restaurant.create({name: "Cafe Loetje", street: "Johannes Vermeerstraat 52", city: "Amsterdam", phone: "020 622 81 73",
+  website: "http://amsterdam.loetje.com/", photo: "http://restaurateurs.iens.nl/static/photos/1197_0_61e5979b71b67c441f00846b29ec8091.jpg", logo: "http://loetjeaantij.loetje.com/wp-content/themes/Loetje2014/images/cafeobject1780325245.png"})
+
+red = Restaurant.create({name: "Restaurant Red", street: "Keizersgracht 594", city: "Amsterdam", phone: "020 320 18 24",
+  website: "http://www.restaurantred.nl/", photo: "http://media-cdn.tripadvisor.com/media/photo-s/01/f8/b3/ea/restaurant-red-amsterdam.jpg", logo: "http://www.restaurantred.nl/images/logo.png"})
+
+mid_town = Restaurant.create({name: "Miss Korea BBQ", street: "Stadhouderskade 12", city: "Amsterdam", phone: "020 607 55 55",
+  website: "http://www.midtowngrill.nl/", photo: "http://1.bp.blogspot.com/-nucWToiDMZ0/U6RfRlQ9aMI/AAAAAAAAIoQ/uB7z5v7TvTQ/s1600/DSC04618.jpg", logo: "http://www.midtowngrill.nl/wp-content/themes/midtowngrill/images/header/logo_new.png"})
+
+#Surinaams
+spang_makandra = Restaurant.create({name: "Warung Spang Makandra", street: "Gerard Doustraat 39", city: "Amsterdam", phone: "020 670 50 81",
+  website: "http://www.spangmakandra.nl/", photo: "http://s3-media2.fl.yelpcdn.com/bphoto/hL-WlB65MeAtCYpGse51Gg/348s.jpg", logo: "http://halalwijzer.nl/wp-content/uploads/2015/12/Warung-Spang-Makandra-logo.jpg"})
+
+roopram_roti = Restaurant.create({name: "Roopram Roti", street: "Van Woustraat 37", city: "Amsterdam", phone: "020 471 04 00",
+  website: "http://www.roopramroti.nl/", photo: "https://s-media-cache-ak0.pinimg.com/736x/1a/5a/e3/1a5ae369a1d9f1c69192f361724fec55.jpg", logo: "http://www.roopramroti.nl/wp-content/uploads/2013/05/Grand-Roopram-logo6.png"})
+
+#Burgers
+butcher = Restaurant.create({name: "The Butcher", street: "Albert Cuypstraat 129", city: "Amsterdam", phone: "020 470 78 75",
+  website: "http://the-butcher.com/albertcuyp/menu/?lang=en", photo: "http://www.telegraph.co.uk/inluxury/2771/1378293914340/the_butcher_bar_ex_2466350ajpg/ALTERNATES/w940-land/The_Butcher_bar_ex_2466350a.jpg", logo: "https://www.couverts.nl/media/foto/noncouverts/550x310/25294/bd66cb06-74b3-4b8f-a689-807c78084590.jpg"})
+
+lombardos = Restaurant.create({name: "Lombardo's", street: "Nieuwe Spiegelstraat 50", city: "Amsterdam", phone: "020 420 50 10",
+  website: "http://www.lombardos.nl/", photo: "http://www.worldlyview.com/wp-content/uploads/2014/08/DSC00356-620x412.jpg", logo: "http://www.lombardos.nl/wp-content/uploads/2015/04/Logo-Final.png"})
+
+ellis = Restaurant.create({name: "Ellis Gourmet Burger", street: "Prinsengracht 422", city: "Amsterdam", phone: "020 261 26 69",
+  website: "http://ellisgourmetburger.be/nl/locations/nl/amsterdam", photo: "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads/2015/03/ellisgourmet.jpg", logo: "https://pbs.twimg.com/profile_images/608590262705659904/DCEdyhBp.png"})
+
+#Tag application
+yokiyo.tags << korean 
+restaurant_korea.tags << korean
+miss_korea.tags << korean
+loetje.tags << steak
+red.tags << steak
+mid_town.tags << steak
+spang_makandra.tags << surinaams
+roopram_roti.tags << surinaams
+butcher.tags << burger
+lombardos.tags << burger
+ellis.tags << burger
