@@ -51,8 +51,18 @@ lombardos = Restaurant.create({name: "Lombardo's", street: "Nieuwe Spiegelstraat
 ellis = Restaurant.create({name: "Ellis Gourmet Burger", street: "Prinsengracht 422", city: "Amsterdam", phone: "020 261 26 69",
   website: "http://ellisgourmetburger.be/nl/locations/nl/amsterdam", photo: "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads/2015/03/ellisgourmet.jpg", logo: "https://pbs.twimg.com/profile_images/608590262705659904/DCEdyhBp.png"})
 
+#Breakfast
+bakers = Restaurant.create({name: "Bakers & Roasters", street: "Eerste Jacob van Campenstraat 54", city: "Amsterdam", phone: "061 469 96 45",
+  website: "http://www.bakersandroasters.com/", photo: "https://farm4.staticflickr.com/3670/14300993295_a33e402934_o.jpg", logo: "https://www.couverts.nl/media/foto/noncouverts/550x310/25294/bd66cb06-74b3-4b8f-a689-807c78084590.jpg"})
+
+lombardos = Restaurant.create({name: "Lombardo's", street: "Nieuwe Spiegelstraat 50", city: "Amsterdam", phone: "020 420 50 10",
+  website: "http://www.lombardos.nl/", photo: "http://www.worldlyview.com/wp-content/uploads/2014/08/DSC00356-620x412.jpg", logo: "http://www.lombardos.nl/wp-content/uploads/2015/04/Logo-Final.png"})
+
+ellis = Restaurant.create({name: "Ellis Gourmet Burger", street: "Prinsengracht 422", city: "Amsterdam", phone: "020 261 26 69",
+  website: "http://ellisgourmetburger.be/nl/locations/nl/amsterdam", photo: "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads/2015/03/ellisgourmet.jpg", logo: "https://pbs.twimg.com/profile_images/608590262705659904/DCEdyhBp.png"})
+
 #Tag application
-yokiyo.tags << korean 
+yokiyo.tags << korean
 restaurant_korea.tags << korean
 miss_korea.tags << korean
 loetje.tags << steak
