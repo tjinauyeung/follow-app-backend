@@ -13,13 +13,13 @@ korean = Tag.create({description: "korean"})
 steak = Tag.create({description: "steak"})
 surinaams = Tag.create({description: "surinaams"})
 burger = Tag.create({description: "burger"})
+breakfast = Tag.create({description: "breakfast"})
+brunch = Tag.create({description: "brunch"})
+thai = Tag.create({description: "thai"})
 
 #Korean
 yokiyo = Restaurant.create({name: "Yokiyo", street: "Oudezijds Voorburgwal 67", city: "Amsterdam", phone: "020 331 45 62",
   website: "http://yokiyo.nl/", photo: "http://ginger-blue.nl/wp-content/uploads/2014/11/Yokiyo-gevel.jpg", logo: "http://www.koreatown.in/wp-content/uploads/2014/06/705_yokiyo-korean-social-food-amsterdam.jpg"})
-
-restaurant_korea = Restaurant.create({name: "Restaurant Korea", street: "Van Boshuizenstraat 207", city: "Amsterdam", phone: "020 644 52 73",
-  website: "http://www.restaurant-korea.nl/", photo: "http://media-cdn.tripadvisor.com/media/photo-s/02/31/ea/2e/filename-nl-amsterdam.jpg", logo: "http://www.restaurant-korea.nl/img/logo.png"})
 
 miss_korea = Restaurant.create({name: "Miss Korea BBQ", street: "Albert Cuypstraat 66-70", city: "Amsterdam", phone: "020 679 06 06",
   website: "http://www.misskorea.nl/", photo: "http://www.misskorea.nl/images/mk0011.jpg", logo: ""})
@@ -31,7 +31,7 @@ loetje = Restaurant.create({name: "Cafe Loetje", street: "Johannes Vermeerstraat
 red = Restaurant.create({name: "Restaurant Red", street: "Keizersgracht 594", city: "Amsterdam", phone: "020 320 18 24",
   website: "http://www.restaurantred.nl/", photo: "http://media-cdn.tripadvisor.com/media/photo-s/01/f8/b3/ea/restaurant-red-amsterdam.jpg", logo: "http://www.restaurantred.nl/images/logo.png"})
 
-mid_town = Restaurant.create({name: "Miss Korea BBQ", street: "Stadhouderskade 12", city: "Amsterdam", phone: "020 607 55 55",
+mid_town = Restaurant.create({name: "Mid Town", street: "Stadhouderskade 12", city: "Amsterdam", phone: "020 607 55 55",
   website: "http://www.midtowngrill.nl/", photo: "http://1.bp.blogspot.com/-nucWToiDMZ0/U6RfRlQ9aMI/AAAAAAAAIoQ/uB7z5v7TvTQ/s1600/DSC04618.jpg", logo: "http://www.midtowngrill.nl/wp-content/themes/midtowngrill/images/header/logo_new.png"})
 
 #Surinaams
@@ -53,13 +53,23 @@ ellis = Restaurant.create({name: "Ellis Gourmet Burger", street: "Prinsengracht 
 
 #Breakfast
 bakers = Restaurant.create({name: "Bakers & Roasters", street: "Eerste Jacob van Campenstraat 54", city: "Amsterdam", phone: "061 469 96 45",
-  website: "http://www.bakersandroasters.com/", photo: "https://farm4.staticflickr.com/3670/14300993295_a33e402934_o.jpg", logo: "https://www.couverts.nl/media/foto/noncouverts/550x310/25294/bd66cb06-74b3-4b8f-a689-807c78084590.jpg"})
+  website: "http://www.bakersandroasters.com/", photo: "https://farm4.staticflickr.com/3670/14300993295_a33e402934_o.jpg", logo: "http://www.bakersandroasters.com/restaurants/bakersandroasters/img/web/balloon.png"})
 
-lombardos = Restaurant.create({name: "Lombardo's", street: "Nieuwe Spiegelstraat 50", city: "Amsterdam", phone: "020 420 50 10",
-  website: "http://www.lombardos.nl/", photo: "http://www.worldlyview.com/wp-content/uploads/2014/08/DSC00356-620x412.jpg", logo: "http://www.lombardos.nl/wp-content/uploads/2015/04/Logo-Final.png"})
+gs = Restaurant.create({name: "Gs", street: "Linnaeusstraat 88", city: "Amsterdam", phone: "",
+  website: "http://reallyniceplace.com/", photo: "http://www.iamsterdam.com/remote/ndtrc/Images/d1/d1a9a317-78bf-4ed6-b9e7-b317a6b37187/57020e3c-19f2-4b41-bdb7-38110f3558e6.jpg", logo: "https://scontent.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/12112339_790005934444020_4287609577223928863_n.jpg?oh=7e405d850b06afbbbbe176941c8e13fd&oe=5750B6A4"})
 
-ellis = Restaurant.create({name: "Ellis Gourmet Burger", street: "Prinsengracht 422", city: "Amsterdam", phone: "020 261 26 69",
-  website: "http://ellisgourmetburger.be/nl/locations/nl/amsterdam", photo: "http://www.bourgondisch.amsterdam/ba2/wp-content/uploads/2015/03/ellisgourmet.jpg", logo: "https://pbs.twimg.com/profile_images/608590262705659904/DCEdyhBp.png"})
+little_collins = Restaurant.create({name: "Little Collins", street: "1e Sweelinckstraat 19-F", city: "Amsterdam", phone: "020 673 22 93",
+  website: "http://www.littlecollins.nl/", photo: "http://www.cityhotspotter.com/wp-content/uploads/2013/06/Little-Collins-Front.jpg", logo: ""})
+
+#Thai
+bird_thai = Restaurant.create({name: "Bird Thais Restaurant", street: "Zeedijk 72-74", city: "Amsterdam", phone: "020 620 14 42",
+  website: "http://www.thai-bird.nl/", photo: "http://thatdamguide.com/wp-content/uploads/2012/10/thai-bird.jpg", logo: "http://www.thai-bird.nl/images/logo.png"})
+
+kinnaree = Restaurant.create({name: "Restaurant Kinnaree", street: "Eerste Anjeliersdwarsstraat 14", city: "Amsterdam", phone: "020 627 71 53",
+  website: "http://www.restaurantkinnaree.nl/#welkom", photo: "http://www.restaurantkinnaree.nl/assets/images/frontend/bg2-1.jpg", logo: "http://media-cdn.tripadvisor.com/media/photo-s/04/7f/f9/84/kinnaree-thai-cuisine.jpg"})
+
+rakang = Restaurant.create({name: "Rakang", street: "Elandsgracht 29-31", city: "Amsterdam", phone: "020 620 95 51",
+  website: "http://www.rakang.nl/", photo: "http://www.eatdrinketc.com/photos/rad494A0.jpg", logo: "http://2.bp.blogspot.com/_zFfOR5W31y4/S3MqI42FPkI/AAAAAAAACAg/3x2E8_n1Ufw/s320/rakang.jpg"})
 
 #Tag application
 yokiyo.tags << korean
@@ -73,3 +83,9 @@ roopram_roti.tags << surinaams
 butcher.tags << burger
 lombardos.tags << burger
 ellis.tags << burger
+bakers.tags << breakfast << brunch
+gs.tags << breakfast << brunch
+little_collins.tags << breakfast << brunch
+bird_thai.tags << thai
+kinnaree.tags << thai
+rakang.tags << thai
