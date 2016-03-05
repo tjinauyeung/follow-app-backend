@@ -92,14 +92,26 @@ rakang.tags << thai
 user = User.create(name: "Tjin", country: "Hong Kong")
 matt = User.create(name: "Matt", country: "Canada")
 jimmy = User.create(name: "Jimmy", country: "Canada")
-
+timmy = User.create(name: "Timmy", country: "United States")
+mike = User.create(name: "Mike", country: "South Korea")
+jane = User.create(name: "Jane", country: "United Kingdom")
+pierre = User.create(name: "Pierre", country: "France")
+piet = User.create(name: "Piet", country: "Netherlands")
+olivia = User.create(name: "Olivia", country: "Spain")
+julia = User.create(name: "Jimmy", country: "Italy")
 
 first_post = Post.create(description: "I want to go here tonight!", user: user)
 second_post = Post.create(description: "me too!", user: matt)
-third_post = Post.create(description: "something", user: jimmy)
-fourth_post = Post.create(description: "something", user: jimmy)
-fith_post = Post.create(description: "this is my second post", user: jimmy)
+third_post = Post.create(description: "who wants to join?", user: jimmy)
+fourth_post = Post.create(description: "I been here before and it's delicious!", user: jimmy)
+fifth_post = Post.create(description: "this is my second post", user: jimmy)
+sixth_post = Post.create(description: "this looks good", user: timmy)
+seventh_post = Post.create(description: "yummy :o)", user: mike)
+eight_post = Post.create(description: "I heard that this place makes excellent food", user: jane)
+ninth_post = Post.create(description: "I'm all alone in a new city, someone want to join me for a meal", user: pierre)
+tenth_post = Post.create(description: "I heard that this place makes excellent food", user: jane)
+
 
 rakang.posts << first_post << third_post
 gs.posts << second_post
-ellis.posts << fourth_post << fith_post
+ellis.posts << fourth_post << fifth_post

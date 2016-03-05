@@ -9,12 +9,6 @@ class RestaurantsController < ApplicationController
 
   def show
     restaurant = Restaurant.find(params[:id])
-    tags = restaurant.tags
-    posts = restaurant.posts
-    render json:{
-      restaurant: restaurant,
-      tags: tags,
-      posts: posts
-    }
+    render :json => restaurant.to_json(:include => { :posts => { :include => :user }})
   end
 end
