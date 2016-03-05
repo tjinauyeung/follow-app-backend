@@ -98,7 +98,16 @@ jane = User.create(name: "Jane", country: "United Kingdom")
 pierre = User.create(name: "Pierre", country: "France")
 piet = User.create(name: "Piet", country: "Netherlands")
 olivia = User.create(name: "Olivia", country: "Spain")
-julia = User.create(name: "Jimmy", country: "Italy")
+julia = User.create(name: "Julia", country: "Italy")
+igor = User.create(name: "Igor", country: "Russia")
+ivana = User.create(name: "Ivana", country: "Russia")
+bob = User.create(name: "Ivana", country: "United States")
+stefano  = User.create(name: "Stefano", country: "Mexico")
+joao  = User.create(name: "Joao", country: "Brazil")
+tom  = User.create(name: "Tom", country: "South Africa")
+mitchell  = User.create(name: "Mitchell", country: "Namibia")
+
+
 
 first_post = Post.create(description: "I want to go here tonight!", user: user)
 second_post = Post.create(description: "me too!", user: matt)
@@ -109,9 +118,30 @@ sixth_post = Post.create(description: "this looks good", user: timmy)
 seventh_post = Post.create(description: "yummy :o)", user: mike)
 eight_post = Post.create(description: "I heard that this place makes excellent food", user: jane)
 ninth_post = Post.create(description: "I'm all alone in a new city, someone want to join me for a meal", user: pierre)
-tenth_post = Post.create(description: "I heard that this place makes excellent food", user: jane)
+tenth_post = Post.create(description: "I heard that this place makes excellent food", user: piet)
+eleventh_post = Post.create(description: "I've been dying to try this place. Anyone in?", user: olivia)
+twelfth_post = Post.create(description: "EAT WITH ME!", user: julia)
+t_post = Post.create(description: "In my country, restaurant eats you!", user: igor)
+a_post = Post.create(description: "He is much correct...very nice!", user: ivana)
+b_post = Post.create(description: "BURGERS! AMERICA!", user: bob)
+c_post = Post.create(description: "I want to try but not a morning person...late brunch?", user: stefano)
+d_post = Post.create(description: "I miss Brazil", user: joao)
+e_post = Post.create(description: "Why not, I have nothing better to do except eat", user: tom)
+f_post = Post.create(description: "Looking to find someone to eat with today and this place looks good", user: mitchell)
 
 
+#User posts for restaurant page
 rakang.posts << first_post << third_post
 gs.posts << second_post
 ellis.posts << fourth_post << fifth_post
+yokiyo.posts << sixth_post
+miss_korea.posts << seventh_post
+loetje.posts << eight_post
+red.posts << ninth_post
+spang_makandra.posts << tenth_post
+mid_town.posts << eleventh_post
+roopram_roti.posts << twelfth_post
+butcher.posts << t_post << a_post
+lombardos.posts << b_post
+bakers.posts << c_post
+gs.posts << d_post
